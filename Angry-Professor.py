@@ -5,14 +5,12 @@ import re
 import sys
 
 def angryProfessor(k, a):
-    # Count the number of students who arrived on time or early
     on_time_students = sum(1 for arrival_time in a if arrival_time <= 0)
 
-    # Check if 'the number of on-time students is less than the threshold'
     if on_time_students < k:
-        return "YES"  # Class is cancelled
+        return "YES" 
     else:
-        return "NO"   # Class is not cancelled
+        return "NO"
 
 if __name__ == '__main__':
     try:
